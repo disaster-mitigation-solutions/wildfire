@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "mitigation-hero",
+      "description": "A dry forest floor with thick brush and kindling, symbolizing fire risk.",
+      "imageUrl": "https://picsum.photos/seed/wildfire1/1200/600",
+      "imageHint": "dry forest brush"
+    },
+    {
+      "id": "during-fire-hero",
+      "description": "Emergency services and support centers helping people during a crisis.",
+      "imageUrl": "https://picsum.photos/seed/wildfire2/1200/600",
+      "imageHint": "emergency shelter"
+    },
+    {
+      "id": "post-fire-hero",
+      "description": "A landscape showing signs of regrowth and flood prevention measures after a fire.",
+      "imageUrl": "https://picsum.photos/seed/wildfire3/1200/600",
+      "imageHint": "burnt forest regrowth"
+    },
+    {
+      "id": "kindling-detail",
+      "description": "Close up of dry leaves and twigs near a home.",
+      "imageUrl": "https://picsum.photos/seed/kindling/600/400",
+      "imageHint": "dry leaves"
+    }
+  ]
+}
