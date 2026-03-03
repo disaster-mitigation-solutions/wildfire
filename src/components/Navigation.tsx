@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -19,10 +20,10 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: 'Resilience', href: '#resilience' },
-    { name: 'During Fire', href: '#active-fire' },
-    { name: 'Post-Fire', href: '#recovery' },
-    { name: 'Localization', href: '#' },
+    { name: 'Resilience', href: '/#resilience' },
+    { name: 'During Fire', href: '/#active-fire' },
+    { name: 'Post-Fire', href: '/#recovery' },
+    { name: 'Request to Join', href: '/join' },
   ];
 
   return (

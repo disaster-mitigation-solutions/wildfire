@@ -1,0 +1,56 @@
+
+{
+  "entities": {
+    "SolutionProviderRequest": {
+      "title": "Solution Provider Request",
+      "description": "Information provided by organizations wishing to join the wildfire resilient hub as solution providers.",
+      "type": "object",
+      "properties": {
+        "organizationName": {
+          "type": "string",
+          "description": "The name of the organization."
+        },
+        "contactName": {
+          "type": "string",
+          "description": "The name of the primary contact person."
+        },
+        "contactEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "The email address of the contact person."
+        },
+        "contactPhone": {
+          "type": "string",
+          "description": "The phone number of the contact person."
+        },
+        "organizationUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "The website URL of the organization."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The time the request was submitted."
+        }
+      },
+      "required": [
+        "organizationName",
+        "contactName",
+        "contactEmail",
+        "organizationUrl"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "google.com"
+    ]
+  },
+  "firestore": {
+    "/provider-requests/{requestId}": {
+      "schema": "SolutionProviderRequest",
+      "description": "Collection of sign-up requests from potential solution providers."
+    }
+  }
+}
