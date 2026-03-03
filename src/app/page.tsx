@@ -224,11 +224,11 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-16 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+        <div className="max-w-77xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="space-y-6 max-w-sm">
             <div className="flex items-center gap-2">
               <ShieldCheck className="text-accent h-8 w-8" />
-              <span className="font-bold text-2xl font-headline tracking-tight">Wildfire Hub</span>
+              <span className="font-bold text-2xl font-headline tracking-tight">Disaster Mitigation Solutions</span>
             </div>
             <p className="text-primary-foreground/70 leading-relaxed">
               Empowering communities through empathy, education, and action. Together, we build a future that survives and thrives.
@@ -262,7 +262,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-sm">
-          <p>© {new Date().getFullYear()} Wildfire Resilient Hub. Localized for English Support.</p>
+          <p>© {new Date().getFullYear()} Disaster Mitigation Solutions. Localized for English Support.</p>
         </div>
       </footer>
     </div>

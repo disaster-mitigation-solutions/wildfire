@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -36,7 +35,7 @@ export function Navigation() {
           <div className="bg-primary p-2 rounded-lg group-hover:bg-accent transition-colors">
             <ShieldAlert className="text-primary-foreground h-6 w-6" />
           </div>
-          <span className="font-bold text-xl text-primary font-headline tracking-tight">Wildfire Hub</span>
+          <span className="font-bold text-xl text-primary font-headline tracking-tight">Disaster Mitigation Solutions</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -97,7 +96,7 @@ export default function JoinPage() {
               Solution Provider Sign Up
             </h1>
             <p className="text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Join our network of verified organizations providing critical wildfire resilience and recovery resources.
+              Join our network of verified organizations providing critical disaster resilience and recovery resources.
             </p>
           </div>
 
@@ -123,7 +122,7 @@ export default function JoinPage() {
               <CardHeader className="bg-primary text-primary-foreground p-8 rounded-t-lg">
                 <CardTitle className="text-2xl font-bold">Partner Details</CardTitle>
                 <CardDescription className="text-primary-foreground/70">
-                  Please provide information about your organization and primary contact.
+                  Please provide information about your organization and primary contact for Disaster Mitigation Solutions.
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">

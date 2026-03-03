@@ -1,12 +1,11 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 import { FirebaseClientProvider } from '@/firebase';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Wildfire Resilient Hub | Mitigation, Support, Recovery',
-  description: 'Providing comprehensive resources for wildfire mitigation, emergency aid, and post-fire recovery.',
+  title: 'Disaster Mitigation Solutions | Resilience, Support, Recovery',
+  description: 'Providing comprehensive resources for disaster mitigation, emergency aid, and recovery.',
 };
 
 export default function RootLayout({
