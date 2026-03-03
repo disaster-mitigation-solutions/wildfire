@@ -21,40 +21,40 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <header className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 h-[800px] w-[800px] bg-primary/5 rounded-full blur-[120px] -z-10" />
-        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 h-[600px] w-[600px] bg-accent/5 rounded-full blur-[100px] -z-10" />
+      <header className="relative pt-28 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 h-[600px] w-[600px] md:h-[800px] md:w-[800px] bg-primary/5 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 h-[400px] w-[400px] md:h-[600px] md:w-[600px] bg-accent/5 rounded-full blur-[100px] -z-10" />
 
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
+            <div className="flex-1 text-center lg:text-left space-y-6 md:space-y-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-xs md:text-sm">
                 <ShieldCheck className="w-4 h-4" />
                 Resilience & Support Platform
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-primary leading-tight font-headline tracking-tight">
-                Strength and Resilience <br />
-                <span className="text-accent underline decoration-accent/30 underline-offset-8">Before, During, & After</span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight font-headline tracking-tight">
+                Strength and Resilience <br className="hidden sm:block" />
+                <span className="text-accent underline decoration-accent/30 underline-offset-4 md:underline-offset-8">Before, During, & After</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mx-auto lg:mx-0">
                 Wildfire risk is part of our landscape, but it doesn't have to be our disaster. 
                 Find immediate support, localized resources, and guidance for every stage of fire risk.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground h-14 px-8 rounded-full text-lg font-bold shadow-lg">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground h-12 md:h-14 px-8 rounded-full text-base md:text-lg font-bold shadow-lg">
                   Find Local Resources
                 </Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 h-14 px-8 rounded-full text-lg font-bold">
+                <Button variant="outline" className="w-full sm:w-auto border-primary text-primary hover:bg-primary/5 h-12 md:h-14 px-8 rounded-full text-base md:text-lg font-bold">
                   View Safety Toolkit
                 </Button>
               </div>
             </div>
 
             <div className="flex-1 w-full max-w-xl">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4 pt-12">
-                  <div className="relative h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="space-y-3 md:space-y-4 pt-8 md:pt-12">
+                  <div className="relative h-36 sm:h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
                       src={forestDetail?.imageUrl || "https://picsum.photos/seed/forest/400/400"} 
                       alt={forestDetail?.description || "Dry forest brush"} 
@@ -62,11 +62,11 @@ export default function Home() {
                       className="object-cover"
                       data-ai-hint={forestDetail?.imageHint || "dry forest"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold">Resilience</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-3 md:p-4">
+                      <span className="text-white text-sm md:text-base font-bold">Resilience</span>
                     </div>
                   </div>
-                  <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                  <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
                       src={rebuildDetail?.imageUrl || "https://picsum.photos/seed/rebuild/400/600"} 
                       alt={rebuildDetail?.description || "Community support"} 
@@ -74,13 +74,13 @@ export default function Home() {
                       className="object-cover"
                       data-ai-hint={rebuildDetail?.imageHint || "community support"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold">Recovery</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-3 md:p-4">
+                      <span className="text-white text-sm md:text-base font-bold">Recovery</span>
                     </div>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                <div className="space-y-3 md:space-y-4">
+                  <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
                       src={rainDetail?.imageUrl || "https://picsum.photos/seed/rain/400/600"} 
                       alt={rainDetail?.description || "Rain drought"} 
@@ -88,11 +88,11 @@ export default function Home() {
                       className="object-cover"
                       data-ai-hint={rainDetail?.imageHint || "dry rain"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold">Prevention</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-3 md:p-4">
+                      <span className="text-white text-sm md:text-base font-bold">Prevention</span>
                     </div>
                   </div>
-                  <div className="relative h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                  <div className="relative h-36 sm:h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
                       src={shelterDetail?.imageUrl || "https://picsum.photos/seed/shelter/400/400"} 
                       alt={shelterDetail?.description || "Emergency response"} 
@@ -100,8 +100,8 @@ export default function Home() {
                       className="object-cover"
                       data-ai-hint={shelterDetail?.imageHint || "emergency shelter"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold">Aid</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-3 md:p-4">
+                      <span className="text-white text-sm md:text-base font-bold">Aid</span>
                     </div>
                   </div>
                 </div>
@@ -223,45 +223,45 @@ export default function Home() {
       />
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-16 px-4 md:px-8">
-        <div className="max-w-77xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+      <footer className="bg-primary text-primary-foreground py-12 md:py-16 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12">
           <div className="space-y-6 max-w-sm">
             <div className="flex items-center gap-2">
               <ShieldCheck className="text-accent h-8 w-8" />
-              <span className="font-bold text-2xl font-headline tracking-tight">Disaster Mitigation Solutions</span>
+              <span className="font-bold text-xl md:text-2xl font-headline tracking-tight">Disaster Mitigation Solutions</span>
             </div>
-            <p className="text-primary-foreground/70 leading-relaxed">
+            <p className="text-sm md:text-base text-primary-foreground/70 leading-relaxed">
               Empowering communities through empathy, education, and action. Together, we build a future that survives and thrives.
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full md:w-auto">
             <div className="space-y-4">
-              <h4 className="font-bold text-lg">Platform</h4>
-              <ul className="space-y-2 text-primary-foreground/60">
+              <h4 className="font-bold text-base md:text-lg">Platform</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/60">
                 <li><a href="#" className="hover:text-accent">About Us</a></li>
                 <li><a href="#" className="hover:text-accent">Mitigation Tools</a></li>
                 <li><a href="#" className="hover:text-accent">Recovery Hub</a></li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="font-bold text-lg">Support</h4>
-              <ul className="space-y-2 text-primary-foreground/60">
+              <h4 className="font-bold text-base md:text-lg">Support</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/60">
                 <li><a href="#" className="hover:text-accent">Emergency Map</a></li>
                 <li><a href="#" className="hover:text-accent">Contact Aid</a></li>
                 <li><a href="#" className="hover:text-accent">Report Risk</a></li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="font-bold text-lg">Legal</h4>
-              <ul className="space-y-2 text-primary-foreground/60">
+              <h4 className="font-bold text-base md:text-lg">Legal</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/60">
                 <li><a href="#" className="hover:text-accent">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-accent">Terms of Use</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-sm">
+        <div className="max-w-7xl mx-auto mt-12 md:mt-16 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-xs md:text-sm">
           <p>© {new Date().getFullYear()} Disaster Mitigation Solutions. Localized for English Support.</p>
         </div>
       </footer>
