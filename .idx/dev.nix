@@ -5,8 +5,8 @@
   channel = "stable-24.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.gh
     pkgs.nodejs_20
-    pkgs.zulu
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -25,6 +25,8 @@
     ];
     workspace = {
       onCreate = {
+        # Example: install JS dependencies from NPM
+        npm-install = "npm install";
         default.openFiles = [
           "src/app/page.tsx"
         ];
